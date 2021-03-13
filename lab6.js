@@ -9,3 +9,6 @@ document.getElementById("title").innerHTML=title;
 let email=prompt("what is your email?");
 console.log(email);
 document.getElementById("myemail").innerHTML=email;
+let age=prompt("what is your age?");
+if (age<13) {alert("Get Parental Consent");}
+
