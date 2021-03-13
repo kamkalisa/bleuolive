@@ -11,6 +11,11 @@ function permission() {
     
     if (age<13) {
         alert("Get Parental Consent");
+        return false;
+    }
+    else{
+        return true;
+
     }
     
 }
@@ -27,5 +32,16 @@ function title() {
     document.getElementById("title").innerHTML=title;
 
 }
-for (i = 0; i < 5; i++) {text += "The number is" + i + "<br>"; 
+//for (i = 0; i < 5; i++) {
+  //  text += "The number is" + i + "<br>"; 
+
+//}
+while(!permission()){
+    continue;
 }
+let num_images = prompt('number of images');
+for(let i = 0; i < num_images; i++){
+        document.write('<img src = "TheCommons.jpg"/>');
+}
+
+        
